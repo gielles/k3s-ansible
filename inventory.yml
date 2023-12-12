@@ -14,7 +14,7 @@ k3s_cluster:
     ansible_port: 22
     ansible_user: pi
     k3s_version: v1.28.4+k3s2
-    token: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDRw4JFksYQJAmWk1w5k1Wk2StppzgGBO6HwTeRJlmJs52uXbaseEjdcZLybouE1pXdZ40xAES+jh8rDr13+r4faIxx8Mk6+vjKaoV4nwARoM0XQY8lF+cMrOB4B35qvVyIplmGxOrlXNXpecX9jCaexAwgWYP6IGeUJeYYn/7w2tctp7tMf9GurjCK4iH7Q+w1tuOh4DX5avgSstdutDE6v8ZbE9L8SyaKWHsvCwG73rEb2sUcFs15hhVRWntpcXJK7G5r7QHjKJCI41KUXxlCSYFcp0/5PIHRWuHvfb9RrKm56TEwTR+Eze7c27Ds8xVHgxhiSDe3pQcNhwrl7yXPVckQ7EpvgIO8yQjY4mhL758jmtNFliDp4Ii0o9Rew1D/qpjN/jD7/27WW1G8ToN5+xs0eTHkbjPNgSBdwh+sWPZWg7FYurJr+68xUhV1EJ2K4MrUG6KFFGHjwU8GPI5OCsLMJqGGNWNGt+n6ujPDoAcMUhCtcLmJKLSI5/lu8M8= michiel@Michiels-MBP.tuxhut.local"  # Use ansible vault if you want to keep it secret
+    token: ""  # Use ansible vault if you want to keep it secret
     api_endpoint: "{{ hostvars[groups['server'][0]]['ansible_host'] | default(groups['server'][0]) }}"
     extra_server_args: "--disable=traefik"
     extra_agent_args: ""
